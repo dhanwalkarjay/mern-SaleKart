@@ -5,7 +5,7 @@ import ListGroup from "react-bootstrap/esm/ListGroup";
 import Badge from "react-bootstrap/esm/Badge";
 import Row from "react-bootstrap/esm/Row";
 import Card from "react-bootstrap/esm/Card";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Rating from "../components/Rating";
 import CardBody from "react-bootstrap/esm/CardBody";
 import Button from "react-bootstrap/esm/Button";
@@ -29,6 +29,7 @@ const reducer = (state, action) => {
 };
 
 function ProductScreen() {
+  const navigate = useNavigate();
   const params = useParams();
   const { slug } = params;
 
@@ -61,11 +62,11 @@ function ProductScreen() {
       window.alert("Sorry. Product ios out off stock for now!");
       return;
     }
-
     ctxDispatch({
       type: "CART_ADD_ITEM",
       payload: { ...product, quantity },
     });
+    navigate("/cart");
   };
 
   return loading ? (
