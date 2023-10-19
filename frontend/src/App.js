@@ -5,7 +5,7 @@ import { Navbar, Container, Nav, Badge, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { useContext } from "react";
 import { Store } from "./Store";
-import { ToastContainer } from "react-bootstrap";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CartScreen from "./screens/CartScreen";
 import SigninScreen from "./screens/SigninScreen";

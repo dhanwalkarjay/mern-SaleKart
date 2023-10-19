@@ -1,20 +1,21 @@
 import bcrypt from "bcryptjs";
 
 const data = {
-  usres: [
+  users: [
     {
       name: "Jay",
-      email: "jay@gmail.com",
-      password: bcrypt.hashSync("123456"),
+      email: "jay123@gmail.com",
+      password: bcrypt.hashSync("12345"),
       isAdmin: true,
     },
     {
       name: "Ajay",
-      email: "Ajay@gmail.com",
+      email: "ajay@gmail.com",
       password: bcrypt.hashSync("123456"),
       isAdmin: false,
     },
   ],
+
   products: [
     {
       // _id: "1",
@@ -23,7 +24,7 @@ const data = {
       category: "Shirts",
       image: "/images/p1.jpeg",
       price: 199,
-      countInStock: 40,
+      countInStock: 3,
       brand: "Nike",
       rating: 4.5,
       numReviews: 10,

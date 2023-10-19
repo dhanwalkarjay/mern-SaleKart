@@ -21,7 +21,7 @@ const data = {
       countInStock: 39,
       brand: "Nike",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 50,
       description: "High Quality Pant Cloth",
     },
     {
@@ -33,7 +33,7 @@ const data = {
       countInStock: 59,
       brand: "addidas",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 55,
       description: "High Quality Adidas Cloth",
     },
     {
@@ -45,7 +45,7 @@ const data = {
       countInStock: 280,
       brand: "Addidas",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 23,
       description: "High Quality Addidas pant Cloth",
     },
     {
@@ -57,7 +57,7 @@ const data = {
       countInStock: 120,
       brand: "Addidas",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 66,
       description: "Good Quality Product",
     },
     {
@@ -69,7 +69,7 @@ const data = {
       countInStock: 50,
       brand: "linen",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 23,
       description: "Good Quality Shirts",
     },
     {
@@ -81,7 +81,7 @@ const data = {
       countInStock: 38,
       brand: "Addidas",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 65,
       description: "Good Quality Product",
     },
     {
@@ -93,7 +93,7 @@ const data = {
       countInStock: 60,
       brand: "linen",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 77,
       description: "Good Quality Product",
     },
     {
@@ -105,7 +105,7 @@ const data = {
       countInStock: 69,
       brand: "Nike",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 87,
       description: "Good Quality Product",
     },
     {
@@ -117,7 +117,7 @@ const data = {
       countInStock: 30,
       brand: "Armani",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 78,
       description: "Good Quality Product",
     },
     {
@@ -129,7 +129,7 @@ const data = {
       countInStock: 90,
       brand: "Armani",
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 86,
       description: "Good Quality Product",
     },
     {
@@ -138,7 +138,7 @@ const data = {
       category: "Shirts",
       image: "/images/p12.jpg",
       price: 380,
-      countInStock: 66,
+      countInStock: 55,
       brand: "linen",
       rating: 4.5,
       numReviews: 10,
