@@ -1,7 +1,23 @@
+import bcrypt from "bcryptjs";
+
 const data = {
+  usres: [
+    {
+      name: "Jay",
+      email: "jay@gmail.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: true,
+    },
+    {
+      name: "Ajay",
+      email: "Ajay@gmail.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: "1",
+      // _id: "1",
       name: "Nike Plain T-Shirt",
       slug: "nike-shirt",
       category: "Shirts",
@@ -14,7 +30,7 @@ const data = {
       description: "High Quality Cloth",
     },
     {
-      _id: "2",
+      // _id: "2",
       name: "Nike Track Pants",
       slug: "nike-pant",
       category: "Pants",
@@ -27,7 +43,7 @@ const data = {
       description: "High Quality Pant Cloth",
     },
     {
-      _id: "3",
+      // _id: "3",
       name: "Addidas Plain T-Shirt",
       slug: "addidas-shirt",
       category: "Shirts",
@@ -40,7 +56,7 @@ const data = {
       description: "High Quality Adidas Cloth",
     },
     {
-      _id: "4",
+      // _id: "4",
       name: "Addidas Track Pant",
       slug: "addidas-pant",
       category: "Pants",
@@ -53,7 +69,7 @@ const data = {
       description: "High Quality Addidas pant Cloth",
     },
     {
-      _id: "5",
+      // _id: "5",
       name: "Addidas Plain White T-Shirt",
       slug: "addidas-pant",
       category: "Shirts",
@@ -66,7 +82,7 @@ const data = {
       description: "Good Quality Product",
     },
     {
-      _id: "6",
+      // _id: "6",
       name: "Check Shirt",
       slug: "Shirt",
       category: "Shirts",
@@ -79,7 +95,7 @@ const data = {
       description: "Good Quality Shirts",
     },
     {
-      _id: "7",
+      // _id: "7",
       name: "Addidas Plain Jeans",
       slug: "addidas-pant",
       category: "Pants",
@@ -92,7 +108,7 @@ const data = {
       description: "Good Quality Product",
     },
     {
-      _id: "8",
+      // _id: "8",
       name: "Check Shirt",
       slug: "Shirt",
       category: "Shirts",
@@ -105,7 +121,7 @@ const data = {
       description: "Good Quality Product",
     },
     {
-      _id: "9",
+      // _id: "9",
       name: "Full Sleaves T-Shirt",
       slug: "Shirt",
       category: "Shirts",
@@ -118,7 +134,7 @@ const data = {
       description: "Good Quality Product",
     },
     {
-      _id: "10",
+      // _id: "10",
       name: "Black Traditional Kurta",
       slug: "Kurta",
       category: "Kurtas",
@@ -131,7 +147,7 @@ const data = {
       description: "Good Quality Product",
     },
     {
-      _id: "11",
+      // _id: "11",
       name: "White Traditional Kurta",
       slug: "Kurta",
       category: "Kurtas",
@@ -144,7 +160,7 @@ const data = {
       description: "Good Quality Product",
     },
     {
-      _id: "12",
+      // _id: "12",
       name: "Check Shirt",
       slug: "Shirt",
       category: "Shirts",

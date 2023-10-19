@@ -20,7 +20,7 @@ export default function CartScreen() {
   const updateCartHandler = async (item, quantity) => {
     const { data } = await axios.get(`/api/products/${item._id}`);
     if (data.countInStock < quantity) {
-      window.alert("Sorry. Product ios out off stock for now!");
+      window.alert("Sorry. Product is out off stock for now!");
       return;
     }
     ctxDispatch({
