@@ -71,7 +71,7 @@ const data = {
     {
       // _id: "5",
       name: "Addidas Plain White T-Shirt",
-      slug: "addidas-pant",
+      slug: "addidas-pant1",
       category: "Shirts",
       image: "/images/p5.jpg",
       price: 180,
@@ -84,7 +84,7 @@ const data = {
     {
       // _id: "6",
       name: "Check Shirt",
-      slug: "Shirt",
+      slug: "Shirt1",
       category: "Shirts",
       image: "/images/p6.jpg",
       price: 460,
@@ -97,7 +97,7 @@ const data = {
     {
       // _id: "7",
       name: "Addidas Plain Jeans",
-      slug: "addidas-pant",
+      slug: "addidas-pant2",
       category: "Pants",
       image: "/images/p7.jpg",
       price: 599,
@@ -109,8 +109,8 @@ const data = {
     },
     {
       // _id: "8",
-      name: "Check Shirt",
-      slug: "Shirt",
+      name: "Check Shirt1",
+      slug: "Shirt2",
       category: "Shirts",
       image: "/images/p8.jpg",
       price: 380,
@@ -123,7 +123,7 @@ const data = {
     {
       // _id: "9",
       name: "Full Sleaves T-Shirt",
-      slug: "Shirt",
+      slug: "Shirt3",
       category: "Shirts",
       image: "/images/p9.jpg",
       price: 290,
@@ -149,7 +149,7 @@ const data = {
     {
       // _id: "11",
       name: "White Traditional Kurta",
-      slug: "Kurta",
+      slug: "Kurta1",
       category: "Kurtas",
       image: "/images/p11.jpg",
       price: 240,
@@ -161,8 +161,8 @@ const data = {
     },
     {
       // _id: "12",
-      name: "Check Shirt",
-      slug: "Shirt",
+      name: "Check Shirt2",
+      slug: "Shirt4",
       category: "Shirts",
       image: "/images/p12.jpg",
       price: 380,
