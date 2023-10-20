@@ -30,7 +30,7 @@ export default function SingupScreen() {
       return;
     }
     try {
-      const { data } = await Axios.post("/api/users.signup", {
+      const { data } = await Axios.post("/api/users/signup", {
         name,
         email,
         password,
