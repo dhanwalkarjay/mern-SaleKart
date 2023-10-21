@@ -24,6 +24,7 @@ import { getError } from "./utils";
 import axios from "axios";
 import SingupScreen from "./screens/SignupScreen";
 import SearchBox from "./components/SearchBox";
+import SearchScreen from "./screens/SearchScreen";
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -125,7 +126,10 @@ function App() {
             {categories.map((category) => (
               <Nav.Item key={category}>
                 <LinkContainer
-                  to={`/search/category=${category}`}
+                  to={{
+                    pathname: "/search",
+                    search: `?category=${category}`,
+                  }}
                   onClick={() => setSidebarIsOpen(false)}
                 >
                   <Nav.Link>{category}</Nav.Link>
@@ -139,6 +143,7 @@ function App() {
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
+              <Route path="/search" element={<SearchScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
               <Route path="/signup" element={<SingupScreen />} />
               <Route path="/profile" element={<ProfileScreen />} />
