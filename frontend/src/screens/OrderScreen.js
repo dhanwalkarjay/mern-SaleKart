@@ -145,10 +145,10 @@ export default function OrderScreen() {
             <Card.Body>
               <Card.Title>Shipping</Card.Title>
               <Card.Text>
-                <strong>Name:</strong>
+                <strong>Name : </strong>
                 {order.shippingAddress.fullName}
                 <br />
-                <strong>Address:</strong>
+                <strong>Address : </strong>
                 {order.shippingAddress.address},{order.shippingAddress.city},
                 {order.shippingAddress.postalcode},
                 {order.shippingAddress.country}
@@ -166,7 +166,7 @@ export default function OrderScreen() {
             <Card.Body>
               <Card.Title>Payment</Card.Title>
               <Card.Text>
-                <strong>Method:</strong> {order.paymentMethod}
+                <strong>Method : </strong> {order.paymentMethod}
               </Card.Text>
               {order.isPaid ? (
                 <MessageBox variant="success">
