@@ -76,7 +76,7 @@ function App() {
         }
       >
         <ToastContainer position="bottom-center" limit={1} />
-        <header>
+        <header className="p-3 bg-black">
           <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
               <Button
@@ -150,13 +150,15 @@ function App() {
               : "side-navbar d-flex justify-content-between flex-wrap flex-column"
           }
         >
-          <Nav className="flex-column text-white w-100 p-2">
+          <Nav className="flex-column text-white w-100 p-4 align-items-center">
             <Nav.Item>
               <strong>Categories</strong>
             </Nav.Item>
+            <hr className="flex-column text-white w-100 align-items-center" />
             {categories.map((category) => (
               <Nav.Item key={category}>
                 <LinkContainer
+                  className="text-white py-3"
                   to={{
                     pathname: "/search",
                     search: `?category=${category}`,
@@ -165,11 +167,12 @@ function App() {
                 >
                   <Nav.Link>{category}</Nav.Link>
                 </LinkContainer>
+                <hr />
               </Nav.Item>
             ))}
           </Nav>
         </div>
-        <main>
+        <main className="p-3">
           <Container className="mt-3">
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
@@ -265,8 +268,8 @@ function App() {
             </Routes>
           </Container>
         </main>
-        <footer>
-          <div className="text-center">All Rights Rserved</div>
+        <footer className="text-center bg-black p-3 text-white">
+          <div>All Rights Rserved</div>
         </footer>
       </div>
     </BrowserRouter>
