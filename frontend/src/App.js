@@ -85,15 +85,30 @@ function App() {
               >
                 <i className="fas fa-bars"></i>
               </Button>
-              <LinkContainer to="/">
-                <Navbar.Brand>Sales kart</Navbar.Brand>
+              <LinkContainer
+                style={{ marginLeft: "20px", marginRight: "40px" }}
+                to="/"
+              >
+                <Navbar.Brand>
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/sales-kart-icon.png"}
+                    alt=""
+                    style={{
+                      width: "90px",
+                      height: "90px",
+                      border: "1px solid #ccc",
+                    }}
+                  />
+                  <br />
+                  Sales kart
+                </Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <SearchBox />
                 <Nav className="me-auto w-100 justify-content-end">
                   <Link to="/cart" className="nav-link">
-                    Cart{" "}
+                    <strong>Cart {}</strong>
                     {cart.cartItems.length > 0 && (
                       <Badge pill bg="danger">
                         {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
@@ -119,7 +134,7 @@ function App() {
                     </NavDropdown>
                   ) : (
                     <Link className="nav-link" to="/signin">
-                      Sign In
+                      <strong>Sign In</strong>
                     </Link>
                   )}
                   {userInfo && userInfo.isAdmin && (
