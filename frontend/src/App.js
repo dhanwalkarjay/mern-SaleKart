@@ -269,7 +269,35 @@ function App() {
           </Container>
         </main>
         <footer className="text-center bg-black p-3 text-white">
-          <div>All Rights Rserved</div>
+          <div
+            className="d-flex justify-content-between m-5"
+            style={{ paddingLeft: "280px", paddingRight: "280px" }}
+          >
+            <div className="d-flex align-items-center">
+              <img
+                src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+                alt=""
+                style={{ paddingRight: "15px" }}
+              />
+              <p>
+                <strong>Return within 14 days</strong> of <br />
+                receiving your order
+              </p>
+            </div>
+            <div className="d-flex align-items-center">
+              <img
+                src="https://assets.myntassets.com/assets/images/retaillabs/2023/5/22/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png"
+                alt=""
+                style={{ width: "83px", paddingRight: "15px" }}
+              />
+              <p>
+                <strong>100% ORIGINAL guarantee for</strong>
+                <br /> all products at SalesKart.com
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div className="my-4">Copyright © Jay. Made by Jay Dhanwalkar</div>
         </footer>
       </div>
     </BrowserRouter>
