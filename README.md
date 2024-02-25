@@ -2,7 +2,7 @@
 
 Welcome to the MERN Ecommerce Website repository!
 
-
+![Image Description](frontend/public/images/project-1.jpg)
 
 ## Overview
 This repository hosts an Ecommerce Website built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. Whether you're an entrepreneur looking to start your online store or a developer interested in learning how to build a full-fledged ecommerce platform, this project provides a comprehensive solution.
